@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/reset.css">
+    <link rel="stylesheet" href="./../styles/styleRegister.css">
+    <link rel="stylesheet" href="./../styles/modalError.css">
+    <title>Cadastre-se</title>
+</head>
+<body class="root">
+    <section class="register">
+        <h1>Cadastro</h1>
+
+        <form action="" class="form__register">
+            <input type="text" name="username" placeholder="Nome de usuário" required>
+
+            <input type="email" name="email" placeholder="Email" required>
+
+            <input type="text" name= "avatarUrl" placeholder="Foto de Perfil" required>
+
+            <input type="password" name="password" placeholder="Senha" required>
+        </form>
+        <p>Já possui uma conta? <a href="./loginPages.html">Fazer Login!</a></p>
+        <button type="submit" class="btn__Cadastrar" >Cadastrar</button>
+    </section>
+
+    <script type="module" src="./../Models/errorModal.js"></script>
+    <script type="module" src="./../Controllers/usuarioControllers.js"></script>
+    <script type="module" src="../js/register.js"></script>
+</body>
+</html>

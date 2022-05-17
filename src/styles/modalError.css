@@ -1,0 +1,52 @@
+.box_error{
+    background-color:#2F0BDE;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: fixed;
+    top: 25%;
+    left: 36%;
+    border-radius: 20px;
+}
+
+.titleError{
+    color: red;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.pError{
+    color: lightsalmon;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btnError{
+    margin-top: 19px;
+    width: 132px;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    background-color:#EDBC64;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btnError:hover{
+    cursor: pointer;
+    color: lightseagreen;
+    background-color: #500c88;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+

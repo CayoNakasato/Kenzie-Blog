@@ -1,0 +1,244 @@
+html, body{
+    background-color: #F9F9F9;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+header{
+    width: 100%;
+    height: 61px;
+    background-color: #6495ED;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.userImg{
+    width: 49px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.userName{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    width: 133px;
+    height: 22px;
+}
+
+.btn_Logout{
+    width: 132px;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    background-color:#EDBC64;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 10px 0 0;
+}
+
+.btn_Logout:hover{
+    cursor: pointer;
+    color: lightseagreen;
+    background-color: #F09300;
+}
+
+.typeBox{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 20px auto;
+    width: 450px;
+    box-shadow: 0px 8px 5px 1px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 0px 8px 5px 1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 8px 5px 1px rgba(0,0,0,0.21);
+    border-radius: 10px;
+}
+
+.inputTypeText{
+    width: 400px;
+    height: 100px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.btn_add{
+    background-color: #F09300;
+    border: none;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.btn_add:hover{
+    cursor:pointer; 
+    background-color: #6495ED ;
+    color: purple;
+}
+
+.timeLine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.tweet{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 133px;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: black;
+    padding: 15px;
+}
+.userImg{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin-left: 14px;
+}
+
+.userName{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 9px;
+}
+
+.infoTweet{
+    margin-top: 14px;
+    gap: 5px;
+}
+
+.text{
+    width: 351px;
+    height: 133px;
+}
+
+.date{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.usersImg{
+    width: 71px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 15px  ;
+}
+
+.usersName{
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 14px;
+}
+
+.nameContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.post_box{
+    width: 600px;
+    height: 180px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.64);
+    display: flex;
+    border-radius: 10px;
+}
+
+.edit{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 18px;
+}
+
+.btnAdd, .btnRemove{
+    border: none;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.btnAdd{
+    color: blue;
+}
+
+.btnRemove{
+    color: red;
+}
+
+.trocaPagina_box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 200px;
+    height: 50px;
+}
+
+
+.proxPagina, .voltarPagina{
+    border: none;
+    background-color: #6495ED;
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.noMore{
+    font-weight: 400;
+    font-size: 20px;
+    background-color: lightgray;
+    border: none;
+}
+
+.noMore:hover{
+    font-weight: 400;
+    font-size: 20px;
+    background-color: red;
+    border: none;
+    cursor:no-drop;
+}
+
+.proxPagina:hover{
+    cursor: pointer;
+    color: purple;
+    background-color: lightblue ;
+}
+
+.voltarPagina:hover{
+    cursor: pointer;
+    color: purple;
+    background-color: lightblue ;
+}
+
+.btnAdd:hover{
+    cursor: pointer;
+    color: purple;
+    background-color: lightblue ;
+}
+
+.btnRemove:hover{
+    cursor: pointer;
+    color: purple;
+    background-color: lightsalmon ;
+}
+
