@@ -15,7 +15,7 @@ class PostControllers{
            )
            const data = await response.json()
            location.reload()
-        console.log(data)
+           localStorage.setItem("postId", data.id)
         return data
     }
 
@@ -54,10 +54,13 @@ class PostControllers{
             },
             body: JSON.stringify(content)
         })
+        location.reload()
+
         return response;
     }
 
     static async deletarPost(idPost){
+        location.reload()
         const response = await fetch(`https://api-blog-m2.herokuapp.com/post/${idPost}`,
         {
             method: "DELETE",

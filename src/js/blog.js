@@ -116,6 +116,21 @@ export class Blog{
                 btn_editar.innerText = "Editar"
                 btn_excluir.innerText = "Apagar"
 
+                btn_excluir.addEventListener("click", (e)=>{
+                 PostControllers.deletarPost(localStorage.getItem("postId"))
+                })
+
+                btn_editar.addEventListener("click", ()=>{
+                    const newTypebox = document.createElement("textarea")
+                    const newButtonEdit = document.createElement("button")
+                    newTypebox.placeholder = "Mude teu post antigo"
+                    newButtonEdit.innerText = "Editar"
+                        newButtonEdit.addEventListener("click", ()=>{
+                            PostControllers.atualizarPost({"newContent": newTypebox.value}, localStorage.getItem("postId"))
+                        })
+                    divInfo.append(newTypebox, newButtonEdit)
+                })
+
                 divInfo.append(btn_editar, btn_excluir, date)
             }
 
